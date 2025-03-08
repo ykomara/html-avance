@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Html avancé</title>
 </head>
+
 <body>
     <header>
         <img src="header.jpg" alt="la toile d'arraignée">
-        
+
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -19,26 +21,40 @@
                 <li><a href="pages/">Réferences</a></li>
             </ul>
         </nav>
-       
+
     </header>
     <hr>
-    
-    
-        <article>
-            <h2>Nouveauté 1</h2>
-            <img src="article1.jpg" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo soluta inventore. Nemo cum modi ipsa necessitatibus doloribus eius qui sequi ad eum, molestias ex iure dicta quos, nulla earum!
-        </article>
+    <h1>Section d'intégration de React dans le html</h1>
+    <div id="like_button_container"></div>
 
-        <article>
-            <h2>Nouveauté 2</h2>
-            <img src="article2.png" alt="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque asperiores accusantium reiciendis dolor necessitatibus veritatis non dolorum rem cupiditate commodi quae est, consequatur, provident nostrum. Molestiae nobis dicta harum? Expedita.
-        </article>
-    
+    <hr>
+    <article>
+        <h2>Nouveauté 1</h2>
+        <img src="article1.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo soluta inventore. Nemo cum modi ipsa
+        necessitatibus doloribus eius qui sequi ad eum, molestias ex iure dicta quos, nulla earum!
+    </article>
+
+    <article>
+        <h2>Nouveauté 2</h2>
+        <img src="article2.png" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque asperiores accusantium reiciendis dolor
+        necessitatibus veritatis non dolorum rem cupiditate commodi quae est, consequatur, provident nostrum. Molestiae
+        nobis dicta harum? Expedita.
+    </article>
+
     <hr>
     <footer>
         <p>Tous droits reservés </p>
     </footer>
+
+    <!-- Charge React -->
+    <!-- Remarque : pour le déploiement, remplacez "development.js"
+       par "production.min.js" -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- Charge notre composant React -->
+    <script src="like_button.js"></script>
 </body>
+
 </html>
